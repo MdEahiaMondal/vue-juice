@@ -1,6 +1,6 @@
 import { atSign, hashSign, linkup, seeMore, focus, fontSize, color, pin } from './plugins/directive.js'
 
-const utilities = {
+const juice = {
     install(Vue) {
         Vue.directive('atSign', atSign);
         Vue.directive('hashSign', hashSign);
@@ -15,7 +15,7 @@ const utilities = {
 
 // Automatic installation if Vue has been added to the global scope.
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(utilities);
+    window.Vue.use(juice);
 }
 
-export default utilities;
+export default juice;

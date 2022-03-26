@@ -1,17 +1,19 @@
 {
-  "name": "vue-utilities",
+  "name": "vue-juice",
   "description": "",
   "version": "0.0.1",
   "private": false,
-  "repository": "https://github.com/MdEahiaMondal/vue-utilities",
-  "bugs": "https://github.com/MdEahiaMondal/vue-utilities",
+  "repository": "https://github.com/MdEahiaMondal/vue-juice",
+  "bugs": "https://github.com/MdEahiaMondal/vue-juice",
   "keywords": [
+    "juice",
+    "vue-juice",
     "utilities",
     "vue-utilities",
     "vue-multitask"
   ],
-  "main": "dist/vue-utilities.common.js",
-  "module": "dist/vue-utilities.umd.min.js",
+  "main": "dist/vue-juice.common.js",
+  "module": "dist/vue-juice.umd.min.js",
   "files": [
     "dist/*"
   ],
@@ -20,7 +22,7 @@
     "serve": "vue-cli-service serve",
     "build": "rollup -c",
     "lint": "vue-cli-service lint",
-    "build-library": "vue-cli-service build --target lib --name vue-utilities ./src/index.js"
+    "build-library": "vue-cli-service build --target lib --name vue-juice ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

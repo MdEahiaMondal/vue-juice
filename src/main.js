@@ -3,9 +3,9 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-import utilities from './index'
+import juice from './index'
 
-Vue.use(utilities)
+Vue.use(juice)
 
 const app = new Vue({
   render: h => h(App),
