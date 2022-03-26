@@ -1,10 +1,24 @@
 {
   "name": "vue-utilities",
-  "version": "0.1.0",
-  "private": true,
+  "description": "A simple vuejs file upload and preview plugin",
+  "version": "1.0.0",
+  "private": false,
+  "repository": "https://github.com/MdEahiaMondal/vue-file-uploader",
+  "bugs": "https://github.com/MdEahiaMondal/vue-file-uploader/issues",
+  "keywords": [
+    "file-upload",
+    "vue",
+    "preview"
+  ],
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "rollup -c",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -18,7 +32,11 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "rollup": "^2.70.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0"
   },
   "eslintConfig": {
     "root": true,
