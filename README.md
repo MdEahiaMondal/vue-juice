@@ -39,7 +39,7 @@ new Vue({
     <tbody>
         <tr>
             <td>v-at-sign</td>
-            <td>as an object ```{style: {}, returnType: {tag: 'a', attr: {href: 'http://something.com/', title: 'nice'}}}```</td>
+            <td>as an object `{style: {}, returnType: {tag: 'a', attr: {href: 'http://something.com/', title: 'nice'}}}`</td>
             <td>You can design any of the words in the paragraph that starts with @sign.</td>
         </tr>
     </tbody>
