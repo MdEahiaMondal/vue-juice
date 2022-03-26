@@ -30,22 +30,12 @@ new Vue({
 ## use case
 
 ### As a **directives** 
-<table>
-    <thead>
-        <th width="100">Name</th>
-        <th>Binding Value</th>
-        <th>Description</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>v-at-sign</td>
-            <td>as an object `{style: {}, returnType: {tag: 'a', attr: {href: 'http://something.com/', title: 'nice'}}}`</td>
-            <td>You can design any of the words in the paragraph that starts with @sign.</td>
-        </tr>
-    </tbody>
-
-</table>
-
-
+| Name | Binding Type | Value | Description |
+|------|--------------|-------|-------------|
+| v-at-sign, v-hash-sign | `object` | `style: {},returnType: {tag: 'a', href: 'http://example.com'}`| You can design any of the words in the paragraph that starts with `@sign` or `@#sign`. |
+| v-linkup | `object` |  `style: {color: "green",},target: true` | If there is a link in the paragraph, you can use it to style.|
+| v-see-more | `object` | `limit: 10,style: {}, classList: ["your-custom-class"]` | You can use it if your paragraph-the is too long and you want to add `see more` and `see less` btn that's time you can use it.|
+| v-focus |  | | You can use it to focus your input field.|
+| v-pin | object | `style: {position: "fixed",right: "300px",top: "0px"}` | if you want to fixed or sticky any section that's time you can use it |
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](https://github.com/MdEahiaMondal/vue-juice).
