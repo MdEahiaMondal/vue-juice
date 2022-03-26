@@ -1,7 +1,7 @@
 {
   "name": "vue-juice",
   "description": "Vue Juice is a beautiful user friendly package made up of a combination of very useful small directive, filters and other useful functions that will make your development faster and more easier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "repository": "https://github.com/MdEahiaMondal/vue-juice",
   "bugs": "https://github.com/MdEahiaMondal/vue-juice",

@@ -32,7 +32,7 @@ new Vue({
 ### As a **directives** 
 | Name | Binding Type | Value | Description |
 |------|--------------|-------|-------------|
-| v-at-sign, v-hash-sign | `object` | `style: {},returnType: {tag: 'a', href: 'http://example.com'}`| You can design any of the words in the paragraph that starts with `@sign` or `@#sign`. |
+| v-at-sign, v-hash-sign | `object` | `style: {},returnType: {tag: 'a', href: 'http://example.com'}`| You can design any of the words in the paragraph that starts with `@sign` or `#sign`. |
 | v-linkup | `object` |  `style: {color: "green",},target: true` | If there is a link in the paragraph, you can use it to style.|
 | v-see-more | `object` | `limit: 10,style: {}, classList: ["your-custom-class"]` | You can use it if your paragraph-the is too long and you want to add `see more` and `see less` btn that's time you can use it.|
 | v-focus |  | | You can use it to focus your input field.|
