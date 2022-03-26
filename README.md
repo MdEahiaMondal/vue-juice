@@ -1,4 +1,4 @@
-# vue-utilities
+# vue-juice
 Vue Juice is a beautiful user friendly package made up of a combination of very useful small directive, filters and other useful functions that will make your development faster and more easier
 # How To Use
 At the beginning of installation I would like to inform you that this package is for ``vue 2``.
