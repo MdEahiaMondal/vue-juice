@@ -1,5 +1,5 @@
 import { atSign, hashSign, linkup, seeMore, focus, fontSize, color, pin } from './plugins/directive.js'
-
+import * as filters from './plugins/filters'
 const juice = {
     install(Vue) {
         Vue.directive('atSign', atSign);
@@ -10,6 +10,11 @@ const juice = {
         Vue.directive('fontSize', fontSize);
         Vue.directive('color', color);
         Vue.directive('pin', pin);
+
+        Object.keys(filters).forEach((key) => {
+            Vue.filter(key, filters[key]);
+        });
+
     }
 };
 
