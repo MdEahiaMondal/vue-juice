@@ -9,11 +9,11 @@ export default [
         output: [
             {
                 format: 'esm',
-                file: 'dist/library.mjs'
+                file: 'dist/vue-juice.mjs'
             },
             {
                 format: 'cjs',
-                file: 'dist/library.js'
+                file: 'dist/vue-juice.js'
             }
         ],
         plugins: [

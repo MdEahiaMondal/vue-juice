@@ -12,8 +12,8 @@
     "vue-utilities",
     "vue-multitask"
   ],
-  "main": "dist/vue-juice.common.js",
-  "module": "dist/vue-juice.umd.min.js",
+  "main": "dist/vue-juice.js",
+  "module": "dist/vue-juice.mjs",
   "files": [
     "dist/*"
   ],
@@ -21,8 +21,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rollup -c",
-    "lint": "vue-cli-service lint",
-    "build-library": "vue-cli-service build --target lib --name vue-juice ./src/index.js"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
