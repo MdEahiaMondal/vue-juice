@@ -1,42 +1,42 @@
-import { format, formatDistanceToNowStrict, parseISO } from 'date-fns';
+// import { format, formatDistanceToNowStrict, parseISO } from 'date-fns';
 
-export function toDateFormat(value, fomat = 'dd-MMM-yyyy, hh:mm:ss') {
-    return format(parseISO(value), fomat);
-}
+// export function toDateFormat(value, fomat = 'dd-MMM-yyyy, hh:mm:ss') {
+//     return format(parseISO(value), fomat);
+// }
 
-export function toFormatDistanceFromNow(value, shortFlag = false) {
-    const diff = formatDistanceToNowStrict(new Date(value));
-    const diffArray = diff.split(' ');
-    const singleC = diffArray[1];
-    let date = ''
-    if (shortFlag) {
-        date = `${diffArray[0]}${singleC.split('')[0]
-            }`
-    } else {
-        date = `${diffArray[0]} ${singleC}`
-    }
-    return date;
-}
+// export function toFormatDistanceFromNow(value, shortFlag = false) {
+//     const diff = formatDistanceToNowStrict(new Date(value));
+//     const diffArray = diff.split(' ');
+//     const singleC = diffArray[1];
+//     let date = ''
+//     if (shortFlag) {
+//         date = `${diffArray[0]}${singleC.split('')[0]
+//             }`
+//     } else {
+//         date = `${diffArray[0]} ${singleC}`
+//     }
+//     return date;
+// }
 
-export function humanReadable(value) {
-    return formatDistanceToNowStrict(new Date(value), {
-        includeSeconds: true,
-        addSuffix: true,
-    });
-}
+// export function humanReadable(value) {
+//     return formatDistanceToNowStrict(new Date(value), {
+//         includeSeconds: true,
+//         addSuffix: true,
+//     });
+// }
 
-export function daysDiff(startDate, endDate, daysToAddOrRemove = 0) {
-    if (!endDate) return ''
-    const oneDay = 24 * 60 * 60 * 1000
-    const startDateObject = new Date(startDate)
-    const endDateObject = new Date(endDate)
+// export function daysDiff(startDate, endDate, daysToAddOrRemove = 0) {
+//     if (!endDate) return ''
+//     const oneDay = 24 * 60 * 60 * 1000
+//     const startDateObject = new Date(startDate)
+//     const endDateObject = new Date(endDate)
 
-    return (
-        Math.round(
-            Math.abs((startDateObject.getTime() - endDateObject.getTime()) / oneDay)
-        ) + daysToAddOrRemove || 1
-    )
-}
+//     return (
+//         Math.round(
+//             Math.abs((startDateObject.getTime() - endDateObject.getTime()) / oneDay)
+//         ) + daysToAddOrRemove || 1
+//     )
+// }
 
 export function strLimit(value, length = 100) {
     return value.length > length ? value.substring(0, length) + '...' : value

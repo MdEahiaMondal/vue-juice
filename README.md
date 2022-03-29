@@ -41,10 +41,6 @@ new Vue({
 ### As a **filters** 
 | Name | Default  | Options | Example | Description
 |------|---------|---------|---------|-----------|
-| toDateFormat | `dd-MMM-yyyy, hh:mm:ss` | `pass format as string`| `{{ "2022-01-01 13:07:41" \| toDateFormat('dd-MMM-yyyy') }}` | formating your date time string |
-| toFormatDistanceFromNow | `false` | `pass flag as Boolean` | `{{ "2022-01-01 13:07:41" \| toFormatDistanceFromNow }}` | if you pass flag as a boolean it will return short name look like `months` to `m`
-| humanReadable |  |  | `{{ "2022-01-01 13:07:41" \| humanReadable }}` | it will return readable datetime naming string like `3 months ago` | 
-| daysDiff | | `enddate or daysToAdd` | `{{ "2022-01-01 13:07:41" \| daysDiff("2021-01-01 13:07:41", 0) }}` | it will return difference of two date  |
 | strLimit | `100` | `length` | `{{ "Hello, This is vue juice. It will provide you with a variety of functions that you can use to do your development" \| strLimit(50)` |
 | reverse | | | `{{ "jone due is a example name of programing." \| reverse }}` | This will reverse your string |
 | capitalize | | | `{{ "hello world" \| capitalize }}` | This will capitalize your string |

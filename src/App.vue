@@ -11,13 +11,13 @@
     <input type="text" v-focus />
     <p v-pin="direction">I am pinned onto the page at 200px to the left.</p>
     <!-- <p v-font-size="50" v-color="'#ddd'">Eahiya Khan</p> -->
-    <p>
+    <!-- <p>
       daysDiff =>
       {{ "2022-01-01 13:07:41" | daysDiff("2021-01-01 13:07:41") }} daysDiff =>
       {{ "2022-01-01 13:07:41" | daysDiff("2021-01-01 13:07:41") }}
     </p>
     <p>{{ "2022-01-01 13:07:41" | toFormatDistanceFromNow }}</p>
-    <p>{{ "2022-01-01 13:07:41" | humanReadable }}</p>
+    <p>{{ "2022-01-01 13:07:41" | humanReadable }}</p> -->
     <p>{{ "sadfsfsdf" | capitalize }}</p>
     <p>{{ "jone due is a example name of programing." | reverse }}</p>
     <p>{{ "sadfsfsdf" | uppercase }}</p>
