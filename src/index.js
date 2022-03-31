@@ -1,5 +1,7 @@
 import * as directives from './plugins/directive.js'
 import * as filters from './plugins/filters'
+
+import { strLimit, reverse, capitalize, uncapitalize, kebabCase, snakeCase, swapCase, titleCase, camelCase, uppercase } from './plugins/filters'
 const juice = {
     install(Vue) {
         Object.keys(directives).forEach((key) => {
@@ -9,6 +11,16 @@ const juice = {
         Object.keys(filters).forEach((key) => {
             Vue.filter(key, filters[key]);
         });
+        Vue.prototype.$strLimit = strLimit
+        Vue.prototype.$reverse = reverse
+        Vue.prototype.$capitalize = capitalize
+        Vue.prototype.$uncapitalize = uncapitalize
+        Vue.prototype.$kebabCase = kebabCase
+        Vue.prototype.$snakeCase = snakeCase
+        Vue.prototype.$swapCase = swapCase
+        Vue.prototype.$titleCase = titleCase
+        Vue.prototype.$camelCase = camelCase
+        Vue.prototype.$uppercase = uppercase
     }
 };
 
