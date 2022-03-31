@@ -1,20 +1,14 @@
-import { atSign, hashSign, linkup, seeMore, focus, fontSize, color, pin } from './plugins/directive.js'
+import * as directives from './plugins/directive.js'
 import * as filters from './plugins/filters'
 const juice = {
     install(Vue) {
-        Vue.directive('atSign', atSign);
-        Vue.directive('hashSign', hashSign);
-        Vue.directive('linkup', linkup);
-        Vue.directive('seeMore', seeMore);
-        Vue.directive('focus', focus);
-        Vue.directive('fontSize', fontSize);
-        Vue.directive('color', color);
-        Vue.directive('pin', pin);
+        Object.keys(directives).forEach((key) => {
+            Vue.directive(key, directives[key]);
+        });
 
         Object.keys(filters).forEach((key) => {
             Vue.filter(key, filters[key]);
         });
-
     }
 };
 

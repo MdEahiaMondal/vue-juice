@@ -1,7 +1,7 @@
 {
   "name": "vue-juice",
   "description": "Vue Juice is a beautiful user friendly package made up of a combination of very useful small directive, filters and other useful functions that will make your development faster and more easier",
-  "version": "0.1.7",
+  "version": "0.2.5",
   "private": false,
   "repository": "https://github.com/MdEahiaMondal/vue-juice",
   "bugs": "https://github.com/MdEahiaMondal/vue-juice",
@@ -12,16 +12,18 @@
     "vue-utilities",
     "vue-multitask"
   ],
-  "main": "dist/vue-juice.js",
-  "module": "dist/vue-juice.mjs",
+  "main": "dist/vue-juice.common.js",
+  "module": "dist/vue-juice.umd.js",
   "files": [
-    "dist/*"
+    "dist/vue-juice.common.js",
+    "dist/vue-juice.umd.js"
   ],
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rollup -c",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-library": "vue-cli-service build --target lib --name vue-juice ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

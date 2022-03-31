@@ -392,5 +392,23 @@ export default {
       },
     };
   },
+  mounted() {
+    console.log(
+      this
+        .$strLimit(`typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an`)
+    );
+    console.log(this.$reverse(`hello world`));
+    console.log(this.$capitalize(`hello world`));
+    console.log(this.$kebabCase(`hello world`));
+    console.log(this.$snakeCase(`hello world`));
+    console.log(this.$swapCase(`HelLo WoRld`));
+    console.log(this.$camelCase(`HelLo WoRld`));
+    console.log(
+      this.$titleCase(
+        `typesetting industry. Lorem Ipsum has been the industry's`
+      )
+    );
+  },
 };
 </script>

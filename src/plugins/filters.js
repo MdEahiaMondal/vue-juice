@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 // import { format, formatDistanceToNowStrict, parseISO } from 'date-fns';
 
 // export function toDateFormat(value, fomat = 'dd-MMM-yyyy, hh:mm:ss') {
@@ -103,3 +105,14 @@ export function camelCase(text) {
     text = text.toLowerCase().replace(/[-_\s.]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
     return text.substr(0, 1).toLowerCase() + text.substr(1);
 }
+
+Vue.prototype.$strLimit = strLimit
+Vue.prototype.$reverse = reverse
+Vue.prototype.$capitalize = capitalize
+Vue.prototype.$uncapitalize = uncapitalize
+Vue.prototype.$kebabCase = kebabCase
+Vue.prototype.$snakeCase = snakeCase
+Vue.prototype.$swapCase = swapCase
+Vue.prototype.$titleCase = titleCase
+Vue.prototype.$camelCase = camelCase
+Vue.prototype.$uppercase = uppercase

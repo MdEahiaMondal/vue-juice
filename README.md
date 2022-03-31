@@ -41,17 +41,29 @@ new Vue({
 ### As a **filters** 
 | Name | Default  | Options | Example | Description
 |------|---------|---------|---------|-----------|
-| strLimit | `100` | `length` | `{{ "Hello, This is vue juice. It will provide you with a variety of functions that you can use to do your development" \| strLimit(50)` |
-| reverse | | | `{{ "jone due is a example name of programing." \| reverse }}` | This will reverse your string |
-| capitalize | | | `{{ "hello world" \| capitalize }}` | This will capitalize your string |
-| uncapitalize | | | `{{ "Hello world" \| uncapitalize }}` | This will uncapitalize your string |
-| uppercase | | | `{{ "hello world" \| uppercase }}` | This will uppercase your string |
-| kebabCase | | | `{{ "hello world" \| kebabCase }}` | This will kebabCase your string |
-| snakeCase | | | `{{ "hello world" \| snakeCase }}` | This will snakeCase your string |
-| swapCase | | | `{{ "hEllO wOrlD" \| swapCase }}` | This will swapCase your string |
-| titleCase | | | `{{ "I'm a little teapot" \| titleCase }}` | This will titleCase your string |
-| camelCase | | | `{{ "HELLO WORLD" \| camelCase }}` | This will camelCase your string |
+| strLimit | `100` | `length` | `Hello, This is vue juice. It will provide you with a variety of functions that you can use to do you...` |
+| reverse | | | `dlrow olleh` | This will reverse your string |
+| capitalize | | | `Hello world` | This will capitalize your string |
+| uncapitalize | | | `hello world` | This will uncapitalize your string |
+| uppercase | | | `HELLO WORLD` | This will uppercase your string |
+| kebabCase | | | `hello-world` | This will kebabCase your string |
+| snakeCase | | | `hello_world` | This will snakeCase your string |
+| swapCase | | | `hELlO wOrLD` | This will swapCase your string |
+| titleCase | | | `Typesetting Industry. Lorem Ipsum Has Been The Industry's` | This will titleCase your string |
+| camelCase | | | `helloWorld` | This will camelCase your string |
 
+### As a Prototype function
+also you can use the all filters as a function in your app
+
+### Example: 
+>` mounted() {
+    console.log(
+      this
+        .$strLimit("typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an")
+    );
+    console.log(this.$reverse("hello world"));
+  },`
 
 ## Wait Developer 
 Very fast I am coming up with more easy and useful functions
