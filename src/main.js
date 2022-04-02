@@ -3,7 +3,9 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-import juice from '/dist/vue-juice.common'
+// import juice from '/dist/vue-juice.common'
+import juice from './index'
+
 
 Vue.use(juice)
 

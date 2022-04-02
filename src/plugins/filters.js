@@ -103,3 +103,12 @@ export function camelCase(text) {
     text = text.toLowerCase().replace(/[-_\s.]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
     return text.substr(0, 1).toLowerCase() + text.substr(1);
 }
+export function chars(text) {
+    return Array.from(text);
+}
+export function words(text) {
+    return text.split(" ");
+}
+export function stripTags(text) {
+    return text.replace(/(<([^>]+)>)/gi, "");
+}

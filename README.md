@@ -42,15 +42,18 @@ new Vue({
 | Name | Default  | Options | Example | Description
 |------|---------|---------|---------|-----------|
 | strLimit | `100` | `length` | `Hello, This is vue juice. It will provide you with a variety of functions that you can use to do you...` |
-| reverse | | | `dlrow olleh` | This will reverse your string |
-| capitalize | | | `Hello world` | This will capitalize your string |
-| uncapitalize | | | `hello world` | This will uncapitalize your string |
-| uppercase | | | `HELLO WORLD` | This will uppercase your string |
-| kebabCase | | | `hello-world` | This will kebabCase your string |
-| snakeCase | | | `hello_world` | This will snakeCase your string |
-| swapCase | | | `hELlO wOrLD` | This will swapCase your string |
-| titleCase | | | `Typesetting Industry. Lorem Ipsum Has Been The Industry's` | This will titleCase your string |
-| camelCase | | | `helloWorld` | This will camelCase your string |
+| reverse | | | `dlrow olleh` |  |
+| capitalize | | | `Hello world` |  |
+| uncapitalize | | | `hello world` |  |
+| uppercase | | | `HELLO WORLD` |  |
+| kebabCase | | | `hello-world` |  |
+| snakeCase | | | `hello_world` |  |
+| swapCase | | | `hELlO wOrLD` |  |
+| titleCase | | | `Typesetting Industry. Lorem Ipsum Has Been The Industry's` |  |
+| camelCase | | | `helloWorld` |  |
+| chars | | | `['h',e',l',l',o','',W',o',r',l',d']` |  |
+| words | | | `['hello', 'world']` |  |
+| stripTags | | | `Winter is cold` | it's remove your html tag from  string  `<span><i>Winter</i> is <b>cold</b></span>` |
 
 ### As a Prototype function
 also you can use the all filters as a function in your app
@@ -58,8 +61,7 @@ also you can use the all filters as a function in your app
 ### Example: 
 >` mounted() {
     console.log(
-      this
-        .$strLimit("typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      this.$strLimit("typesetting industry. Lorem Ipsum has been the industry's standard dummy
       text ever since the 1500s, when an")
     );
     console.log(this.$reverse("hello world"));
